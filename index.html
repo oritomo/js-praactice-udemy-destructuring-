@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSの勉強</title>
+  <style>
+    .job {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .warn {
+      font-size: 40px;
+      color: red;
+    }
+
+    .container {
+      width: 200px;
+      margin: 100px auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <script>
+    'use strict';
+    {
+
+
+      //[4,5],[10,1],[0,40]を{x : x,y : y}の形にする手順
+
+      const points=[
+        [4,5],
+        [10,1],
+        [0,40]
+      ] ;
+
+      points.map(point=>{
+        const x=point[0];
+        const y=point[1];
+        
+        console.log(x);
+        console.log(y);
+      });
+
+      points.map(point=>{
+        const [ x,y ]=point;
+        return console.log({x : x,y : y});
+      });
+
+      points.map(([ x,y ])=>{
+        return console.log({x , y });
+      });
+          
+    }
+  </script>
+
+
+</body>
+
+</html>
